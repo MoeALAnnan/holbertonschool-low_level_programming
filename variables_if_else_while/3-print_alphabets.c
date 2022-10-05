@@ -12,7 +12,7 @@ for (i = 'a'; i <= 'z'; i++)
 {
 putchar(i);
 }
-for (x ='A'; x <='Z'; x++)
+for (x = 'A'; x <= 'Z'; x++)
 {
 putchar(x);
 }

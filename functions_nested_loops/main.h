@@ -1,1 +1,3 @@
-int _putchar(char c;
+#declared functions
+
+int _putchar(char c);

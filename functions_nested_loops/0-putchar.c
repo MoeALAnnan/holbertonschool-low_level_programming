@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
 * main - Entry point
 *
@@ -7,9 +6,12 @@
 */
 int main(void)
 {
-char x[100] = {'_','p','u','t','c','h','a','r'};
+char x[100] = "_putchar";
 int i;
-for (i=0;i < strlen(x); i++)
-_putchar("%i",x[i]);
+for (i=0;i < sizaof(x); i++)
+{
+_putchar("%c",x[i]);
+}
+_putchar('/n');
 return (0);
 }

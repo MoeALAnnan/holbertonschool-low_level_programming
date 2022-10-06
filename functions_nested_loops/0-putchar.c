@@ -8,7 +8,7 @@ int main(void)
 {
 char x[100] = "_putchar";
 int i;
-for (i=0;i < sizaof(x); i++)
+for (i=0;i < sizeof(x); i++)
 {
 _putchar("%c",x[i]);
 }

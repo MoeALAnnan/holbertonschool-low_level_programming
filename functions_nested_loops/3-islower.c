@@ -2,8 +2,8 @@
 /**
  * _islower - check if lowercase.
  * Description : this program is a checker
- * Return 1 (success)
- * Return 0 
+ * @c: int
+ * Return: 1 success
  */
 int _islower(int c)
 {
@@ -11,6 +11,6 @@ if (c >= 97 && c <= 122)
 {
 return (1);
 }
-else 
+else
 return (0);
 }

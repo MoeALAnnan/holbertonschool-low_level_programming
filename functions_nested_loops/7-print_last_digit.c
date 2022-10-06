@@ -7,18 +7,11 @@
  */
 int print_last_digit(int c)
 {
-if (c < 0)
-{
-c = -1 * c % 10;
-}
-else if (c == -2147483648)
-{
-c = -1 * c / 10000 % 10;
-}
-else
-{
-c = c % 10;
-}
-_putchar('0' + c);
-return (c);
+	c = c % 10;
+	if (c < 0)
+	{
+		c = -1 * c;
+	}
+	_putchar('0' + c);
+	return (c);
 }

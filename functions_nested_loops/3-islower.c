@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * _islower - check if lowercase.
- *
- * Return 1 if true, 0 if false.
+ * Description : this program is a checker
+ * Return 1 (success)
+ * Return 0 
  */
 int _islower(int c)
 {

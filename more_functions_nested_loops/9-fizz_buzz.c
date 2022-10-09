@@ -23,8 +23,8 @@ int main(void)
 			printf("FizzBuzz ");
 		}
 		else if (i == 100)
-		{	
-			printf("FizzBuzz");
+		{
+			printf("Buzz");
 		}
 		else
 

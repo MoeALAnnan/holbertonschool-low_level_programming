@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_numbers - Entry point
+ * more_numbers - Entry point
  *
  * Description: a function that prints
  * Return: void
@@ -12,7 +12,7 @@ void more_numbers(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		for (i = 1; i < 15 ; i++)
+		for (i = 0; i < 15 ; i++)
 		{
 			if (!(i <= 9))
 

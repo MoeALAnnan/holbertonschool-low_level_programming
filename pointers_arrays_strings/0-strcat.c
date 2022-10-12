@@ -13,17 +13,10 @@ char *_strcat(char *dest, char *src)
 	int n = 0;
 
 	while (src[i] != '\0')
-	{
+
 
 		i++;
-	}
-	i--;
-
-
-
-
-
-
+	
 	while (dest[j] != '\0')
 		j++;
 

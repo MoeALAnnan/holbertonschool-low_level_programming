@@ -17,27 +17,17 @@ char *_strncpy(char *dest, char *src, int n)
 	for (i = 0; dest[i] != '\0'; i++)
 	for (j = 0; src[j] != '\0'; j++)
 	
-	if (n > i)
+	if (dest == 0)
 	{
-		for (x = 0; x < i; x++)
-			dest[x] = src[x];
+		return ('\0');
 	}
-	else if ( i < n )
-	{
-		for (x = 0; x < n; x++)
-		{
-		dest[x] = src[x];
-		}
-		dest[n] = '\0';
-	}
-
 	else
 	{
 		for (x = 0; x < n; x++)
 		{dest[x] = src[x];}
-
-		
 	}
+		
+	
 
 	
 	

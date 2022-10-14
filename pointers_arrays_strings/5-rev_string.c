@@ -20,7 +20,7 @@ void rev_string(char *s)
 	beg = s;
 	end = s + c;
 
-	while (i < c / 2)
+	while (i < c / 2 && s[i] != '\0')
 	{
 		temp = *end;
 		*end = *beg;

@@ -18,7 +18,9 @@ void rev_string(char *s)
 	c = sizeof(s);
 
 	beg = s;
-	end = s + c;
+	end = s;
+	for (i = 0; i < c; i++)
+		    end++;
 
 	for (i = 0; i < c / 2 && s[i] != '\0'; i++)
 	{

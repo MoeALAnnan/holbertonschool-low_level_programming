@@ -20,12 +20,11 @@ void rev_string(char *s)
 	beg = s;
 	end = s + c;
 
-	while (i < c / 2 && s[i] != '\0')
+	for (i = 0; i < c / 2 && s[i] != '\0'; i++)
 	{
 		temp = *end;
 		*end = *beg;
 		*beg = temp;
-		i++;
 		beg++;
 		end--;
 	}

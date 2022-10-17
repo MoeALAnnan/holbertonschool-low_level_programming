@@ -1,4 +1,3 @@
-#include <stdio.>
 #include "main.h"
 /**
  * set_string - a function

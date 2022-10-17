@@ -29,7 +29,7 @@ void print_diagsums(int *a, int size)
 		sum2 = sum2 + a[j];
 		j = j + (size - 1);
 	}
-	printf("%d \n", sum2);
+	printf("%d ", sum2);
 
 }
 

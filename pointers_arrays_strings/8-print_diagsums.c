@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 		sum = sum + a[i];
 		i = i + (size + 1);
 	}
-	puts("%d, ", sum);
+	printf("%d, ", sum);
 
 	for (; j <= (size * size) - size ;)
 	{
@@ -29,7 +29,7 @@ void print_diagsums(int *a, int size)
 		sum2 = sum2 + a[j];
 		j = j + (size - 1);
 	}
-	puts("%d ", sum2);
+	printf("%d\n", sum2);
 
 }
 

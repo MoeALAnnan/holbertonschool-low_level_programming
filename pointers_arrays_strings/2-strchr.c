@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdef.h>
 /**
  * _strchr - a function
  * @s: pointer

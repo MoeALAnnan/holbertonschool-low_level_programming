@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdio.>
+#include "main.h"
 /**
  * set_string - a function
  * @s: parameter

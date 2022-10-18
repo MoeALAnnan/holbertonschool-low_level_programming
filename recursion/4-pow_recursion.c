@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * _pow_recursion - a function
- * @n: parameter
+ * @x: parameter
+ * @y: parameter
  * Description: a function that calculates the factorial
  * Return: void
  */

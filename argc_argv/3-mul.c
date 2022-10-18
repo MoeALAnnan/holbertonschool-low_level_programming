@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 
 	result = var1 * var2;
 	printf("%d\n", result);
+	return (0);
 	}
 
 	else if (argc == 2)

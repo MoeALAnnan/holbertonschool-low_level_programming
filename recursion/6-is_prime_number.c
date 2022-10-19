@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * fxn_primeWq - a function
+ * fxn_prime - a function
  * @x: parameter user input
  * @c: parameter counter
  * Description: a function that checks for prime numbers
@@ -24,7 +24,7 @@ int fxn_prime(int x, int c)
 
 }
 /**
- * is_prime_numbers - a function
+ * is_prime_number - a function
  * @n: user input
  * Description: a function that calls a function to check for prime numbers
  * Return: void

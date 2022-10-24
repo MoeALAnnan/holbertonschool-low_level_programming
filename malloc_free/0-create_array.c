@@ -7,20 +7,19 @@
  * @size: parameter
  * @c: parameter
  * Description: a function that that creates an array of chars
- * Return: void
+ * Return: ptr
  */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 	char *ptr;
-
+	if (size == 0)
+		return (NULL);
 	ptr = (char *)malloc(sizeof(char) * size);
+	if (ptr == NULL)
+		return (NULL);
 	for (i = 0; i < size; i++)
 		ptr[i] = c;
 
-	if (size == 0)
-		return (NULL);
-	if (ptr == NULL)
-		return (NULL);
 	return (ptr);
 }

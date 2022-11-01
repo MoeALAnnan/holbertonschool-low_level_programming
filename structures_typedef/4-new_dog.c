@@ -19,9 +19,21 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t var;
 
 	name1 = malloc(sizeof(char) * strlen(name) + 1);
+	if (name1 == NULL)
+	{
+		free(name1);
+		name1 = NULL;
+		return (NULL);
+	}
 	strcpy(name1, name);
 
 	owner1 = malloc(sizeof(char) * strlen(owner) + 1);
+	if (owner1 == NULL)
+	{
+		free(owner1);
+		owner1 = NULL;
+		return (NULL);
+	}
 
 	strcpy(owner1, owner);
 	var.name = name1;

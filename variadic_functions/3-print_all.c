@@ -17,7 +17,7 @@ void print_int(va_list ap)
  */
 void print_char(va_list ap)
 {
-	printf("%d", va_arg(ap, int));
+	printf("%c", va_arg(ap, int));
 }
 /**
  * print_str - print strings
@@ -49,6 +49,7 @@ void print_flt(va_list ap)
  */
 void print_all(const char * const format, ...)
 {
+	char *sep = "";
 	op_f ops[] = {
 
 		{"i", print_int},
@@ -73,15 +74,16 @@ void print_all(const char * const format, ...)
 
 		{
 			if (*ops[j].op == format[i])
-		{
-				ops[i].f(ap);
-				printf(",");
-		}
+			{
+				printf("%s", sep);
+				ops[j].f(ap);
+				sep = ",";
+			}
 			j++;
 		}
 		i++;
 	}
+	printf("\n");
 	va_end(ap);
-
 
 }

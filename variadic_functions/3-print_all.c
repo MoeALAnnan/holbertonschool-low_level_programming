@@ -27,12 +27,12 @@ void print_char(va_list ap)
  */
 void print_str(va_list ap)
 {
-/*	if (ap == NULL)
-	{
-		printf("(nil)\n");
-		return;
-	}*/
-	printf("%s", va_arg(ap, char *));
+
+	char *next_arg;
+
+	next_arg = va_arg(ap, char *);
+	next_arg == NULL ? next_arg = "(nil)" : next_arg;
+	printf("%s", next_arg);
 }
 /**
  * print_flt - print float

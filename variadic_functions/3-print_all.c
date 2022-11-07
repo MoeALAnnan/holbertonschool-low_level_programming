@@ -30,7 +30,7 @@ void print_str(va_list ap)
 	{
 		printf("(nil)");
 	}
-
+	else
 	printf("%s", va_arg(ap, char *));
 }
 /**

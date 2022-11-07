@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdlib.h>
 /**
  * print_int - print integers
  * @ap: variable list
@@ -29,8 +30,8 @@ void print_str(va_list ap)
 	if (ap == NULL)
 	{
 		printf("(nil)");
+		exit(1);
 	}
-	else
 	printf("%s", va_arg(ap, char *));
 }
 /**

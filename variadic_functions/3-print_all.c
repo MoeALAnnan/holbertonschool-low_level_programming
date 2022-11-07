@@ -29,8 +29,8 @@ void print_str(va_list ap)
 {
 	if (ap == NULL)
 	{
-		printf("(nil)");
-		exit(1);
+		printf("(nil)\n");
+		return;
 	}
 	printf("%s", va_arg(ap, char *));
 }
@@ -71,7 +71,7 @@ void print_all(const char * const format, ...)
 
 	{
 		j = 0;
-		while (j < 4)
+		while (j < 5)
 
 		{
 			if (*ops[j].op == format[i])

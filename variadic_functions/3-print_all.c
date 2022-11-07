@@ -27,11 +27,11 @@ void print_char(va_list ap)
  */
 void print_str(va_list ap)
 {
-	if (ap == NULL)
+/*	if (ap == NULL)
 	{
 		printf("(nil)\n");
 		return;
-	}
+	}*/
 	printf("%s", va_arg(ap, char *));
 }
 /**
@@ -66,6 +66,11 @@ void print_all(const char * const format, ...)
 
 	i = 0;
 
+	if (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
 	va_start(ap, format);
 	while (format[i] != '\0' && format)
 

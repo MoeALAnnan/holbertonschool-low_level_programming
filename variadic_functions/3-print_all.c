@@ -77,7 +77,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", sep);
 				ops[j].f(ap);
-				sep = ",";
+				sep = ", ";
 			}
 			j++;
 		}

@@ -28,6 +28,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (*head == NULL)
 	{
 		*head = newNode;
+		free(newNode);
+		newNode = NULL;
 			return (*head);
 	}
 	else
@@ -38,6 +40,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		}
 
 		lastNode->next = newNode;
+		free(newNode);
+		newNode = NULL;
 	}
 return (lastNode);
 }

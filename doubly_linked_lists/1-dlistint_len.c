@@ -3,12 +3,12 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_dlistint - a function
+ * dlistint_len - a function
  * @h: parameter
- * Description: print nodes
+ * Description: print number of nodes
  * Return: number of nodes
  */
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	/*declare a pointer to make it traverse the function*/
 	const dlistint_t *ptr;

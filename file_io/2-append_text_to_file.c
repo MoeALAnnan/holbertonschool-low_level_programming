@@ -6,7 +6,7 @@
 #include <fcntl.h>
 #include <string.h>
 /**
- * create_file - function
+ * append_text_to_file - function
  * @filename: parameter
  * @text_content: parameter
  * Description: a function that creates a file

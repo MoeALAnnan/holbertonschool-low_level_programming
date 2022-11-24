@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * sum_listint - function
+ * sum_dlistint - function
  * @head: head of single linked list
  * Description: a function that adds data in a list
  * Return: int

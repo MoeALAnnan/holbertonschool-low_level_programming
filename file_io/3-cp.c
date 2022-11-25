@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
 		exit(97);
 
 	fdsource = open(argv[1], O_RDONLY);
-		if (fdsource == -1)
-		{
-			dprintf(STDERR_FILENO, "ERROR: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
+	if (fdsource == -1)
+	{
+		dprintf(STDERR_FILENO, "ERROR: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
 	fddest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 000664);
 	while (size > 0)
 	{

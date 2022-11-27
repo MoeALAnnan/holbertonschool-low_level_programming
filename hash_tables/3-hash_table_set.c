@@ -29,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		ht->array[index] = ht_pair(key, value);
 	}
-	return (0);
+	return (1);
 
 	while (node != NULL)
 	{
@@ -38,7 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(node->value);
 			node->value = malloc(strlen(value) + 1);
 			strcpy(node->value, value);
-			return (0);
+			return (1);
 		}
 		temp = node;
 		node = temp->next;

@@ -12,8 +12,8 @@ hash_node_t *ht_pair(const char *key, const char *value)
 
 	node->key = malloc(sizeof(key) + 1);
 	node->value = malloc(sizeof(value) + 1);
-	strcpy(node->key, key);
-	strcpy(node->value, value);
+	node->key = strdup((char *)key);
+	node->value = strdup((char *)value);
 	node->next = NULL;
 
 	return (node);
@@ -24,6 +24,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index = key_index((const unsigned char *)key, i);
 	hash_node_t *node = ht->array[index];
 	hash_node_t *temp;
+	if (strcmp(key, "") == 0 || key == NULL || ht == NULL)
+				return (0);
 
 	if (node == NULL)
 	{

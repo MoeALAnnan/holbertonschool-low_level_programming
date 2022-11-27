@@ -24,14 +24,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index = key_index((const unsigned char *)key, i);
 	hash_node_t *node = ht->array[index];
 	hash_node_t *temp;
+
 	if (strcmp(key, "") == 0 || key == NULL || ht == NULL)
-				return (0);
+		return (0);
 
 	if (node == NULL)
 	{
 		ht->array[index] = ht_pair(key, value);
+		return (1);
 	}
-	return (1);
 
 	while (node != NULL)
 	{

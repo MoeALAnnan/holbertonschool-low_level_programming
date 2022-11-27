@@ -41,12 +41,12 @@ hash_node_t *ht_pair(const char *key, const char *value)
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = key_index((const unsigned char *)key, ht->size);
-	hash_node_t *node = ht->array[index];
-	hash_node_t *temp;
-
 	while (ht)
 	{
+		unsigned long int index = key_index((const unsigned char *)key, ht->size);
+		hash_node_t *node = ht->array[index];
+		hash_node_t *temp;
+
 
 		if (strcmp(key, "") == 0 || key == NULL)
 			return (0);

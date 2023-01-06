@@ -1,7 +1,7 @@
 #include "search_algos.h"
 int binary_search(int *array, size_t size, int value)
 {
-	size_t l, r, mid, i;
+	size_t l, r, mid;
 
 	l = 0;
 	r = size - 1;
@@ -10,9 +10,9 @@ int binary_search(int *array, size_t size, int value)
 
 	{
 		printf("Searching in array: ");
-		for (i = l; i < r; i++)
-			printf("%d, ", array[i]);
-		printf("%d\n", array[i]);
+		for (mid = l; mid < r; mid++)
+			printf("%d, ", array[mid]);
+		printf("%d\n", array[mid]);
 		mid = (l + r) / 2;
 		if (value == array[mid])
 			return (mid);
@@ -20,7 +20,7 @@ int binary_search(int *array, size_t size, int value)
 		else if (value < array[mid])
 
 			r = mid - 1;
-		else if (value > array[mid])
+		else
 			l = mid + 1;
 	}
 
